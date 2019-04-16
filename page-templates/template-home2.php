@@ -425,7 +425,8 @@ var ShapelyAdminObject = {"sticky_header":"1"};
 											<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/shapely-scripts.js?ver=20180423'></script>
 											<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
 											<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/jquery.easing.1.3.js?ver=5.1.1'></script>
-											
+											<script type="text/javascript" src="http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=1.4.1"></script>
+											<link rel="stylesheet" id="cf7cf-style-css" href="http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/style.css?ver=1.4.1" type="text/css" media="all">
 <script>
 (function($) {
 	$(document).ready(function() {
