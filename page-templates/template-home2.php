@@ -265,7 +265,9 @@ var ShapelyAdminObject = {"sticky_header":"1"};
 					$('.owl-carousel').owlCarousel({
 						margin: 10,
 						loop: true,
-						items: 1
+						nav:true,
+						items:1,
+						navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
 					})
 				})
 			})(jQuery);
