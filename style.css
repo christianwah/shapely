@@ -4531,12 +4531,12 @@ section .widget-post-excerpt {
 
 /* Custom CSS */
 #sec2 {
-	background: url("http://localhost:8012/qrcode/wp-content/uploads/2019/03/Home-BG-1.jpg") no-repeat center;
+	background: url("/wp-content/uploads/2019/03/Home-BG-1.jpg") no-repeat center;
 	background-size: cover;
 }
 
 #sec5 {
-	background: url("http://localhost:8012/qrcode/wp-content/uploads/2019/03/Carousel-3.jpg") no-repeat center;
+	background: url("/wp-content/uploads/2019/03/Carousel-3.jpg") no-repeat center;
 	background-size: cover;
 }
 
