@@ -41,13 +41,14 @@
 		</style>
 		<link rel='stylesheet' id='wp-block-library-css'  href='/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
 		<link rel='stylesheet' id='contact-form-7-css'  href='/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+		<link rel="stylesheet" id="cf7cf-style-css" href="http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/style.css?ver=1.4.1" type="text/css" media="all"/>
 		<link rel='stylesheet' id='bootstrap-css'  href='/wp-content/themes/shapely/assets/css/bootstrap.min.css?ver=5.1.1' type='text/css' media='all' />
 		<link rel='stylesheet' id='font-awesome-css'  href='/wp-content/themes/shapely/assets/css/font-awesome.min.css?ver=5.1.1' type='text/css' media='all' />
 		<link rel='stylesheet' id='shapely-fonts-css'  href='//fonts.googleapis.com/css?family=Raleway%3A100%2C300%2C400%2C500%2C600%2C700&#038;ver=5.1.1' type='text/css' media='all' />
 		<link rel='stylesheet' id='flexslider-css'  href='/wp-content/themes/shapely/assets/css/flexslider.css?ver=5.1.1' type='text/css' media='all' />
-		<link rel='stylesheet' id='shapely-style-css'  href='/wp-content/themes/shapely/style.css?ver=5.1.1' type='text/css' media='all' />
 		<link rel='stylesheet' id='owl.carousel-css'  href='/wp-content/themes/shapely/assets/js/owl-carousel/owl.carousel.min.css?ver=5.1.1' type='text/css' media='all' />
 		<link rel='stylesheet' id='owl.carousel.theme-css'  href='/wp-content/themes/shapely/assets/js/owl-carousel/owl.theme.default.css?ver=5.1.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='shapely-style-css'  href='/wp-content/themes/shapely/style.css?ver=5.1.1' type='text/css' media='all' />
 		<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 		<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 		<link rel='https://api.w.org/' href='/wp-json/' />
@@ -258,7 +259,6 @@ var ShapelyAdminObject = {"sticky_header":"1"};
 		<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
 		<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/jquery.easing.1.3.js?ver=5.1.1'></script>
 		<script type="text/javascript" src="http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=1.4.1"></script>
-		<link rel="stylesheet" id="cf7cf-style-css" href="http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/style.css?ver=1.4.1" type="text/css" media="all"/>
 		<script>
 			(function($) {
 				$(document).ready(function() {
@@ -267,6 +267,7 @@ var ShapelyAdminObject = {"sticky_header":"1"};
 						loop: true,
 						nav:true,
 						items:1,
+						dots: false,
 						navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
 					})
 				})
