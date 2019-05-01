@@ -39,26 +39,26 @@
 			padding: 0 !important;
 			}
 		</style>
-		<link rel='stylesheet' id='wp-block-library-css'  href='/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
-		<link rel='stylesheet' id='contact-form-7-css'  href='/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
-		<link rel="stylesheet" id="cf7cf-style-css" href="http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/style.css?ver=1.4.1" type="text/css" media="all"/>
-		<link rel='stylesheet' id='bootstrap-css'  href='/wp-content/themes/shapely/assets/css/bootstrap.min.css?ver=5.1.1' type='text/css' media='all' />
-		<link rel='stylesheet' id='font-awesome-css'  href='/wp-content/themes/shapely/assets/css/font-awesome.min.css?ver=5.1.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='wp-block-library-css'  href='http://merpati-workshop.hostingerapp.com/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='contact-form-7-css'  href='http://merpati-workshop.hostingerapp.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+		<link rel="stylesheet" id="cf7cf-style-css" href='http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/style.css?ver=1.4.1' type="text/css" media="all"/>
+		<link rel='stylesheet' id='bootstrap-css'  href='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/css/bootstrap.min.css?ver=5.1.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='font-awesome-css'  href='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/css/font-awesome.min.css?ver=5.1.1' type='text/css' media='all' />
 		<link rel='stylesheet' id='shapely-fonts-css'  href='//fonts.googleapis.com/css?family=Raleway%3A100%2C300%2C400%2C500%2C600%2C700&#038;ver=5.1.1' type='text/css' media='all' />
-		<link rel='stylesheet' id='flexslider-css'  href='/wp-content/themes/shapely/assets/css/flexslider.css?ver=5.1.1' type='text/css' media='all' />
-		<link rel='stylesheet' id='owl.carousel-css'  href='/wp-content/themes/shapely/assets/js/owl-carousel/owl.carousel.min.css?ver=5.1.1' type='text/css' media='all' />
-		<link rel='stylesheet' id='owl.carousel.theme-css'  href='/wp-content/themes/shapely/assets/js/owl-carousel/owl.theme.default.css?ver=5.1.1' type='text/css' media='all' />
-		<link rel='stylesheet' id='shapely-style-css'  href='/wp-content/themes/shapely/style.css?ver=5.1.1' type='text/css' media='all' />
-		<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-		<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+		<link rel='stylesheet' id='flexslider-css'  href='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='owl.carousel-css'  href='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/owl-carousel/owl.carousel.min.css?ver=5.1.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='owl.carousel.theme-css'  href='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/owl-carousel/owl.theme.default.css?ver=5.1.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='shapely-style-css'  href='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/style.css?ver=5.1.1' type='text/css' media='all' />
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 		<link rel='https://api.w.org/' href='/wp-json/' />
 		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
 		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
 		<meta name="generator" content="WordPress 5.1.1" />
 		<link rel="canonical" href="/" />
 		<link rel='shortlink' href='/' />
-		<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmerpati-workshop.hostingerapp.com%2F" />
-		<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmerpati-workshop.hostingerapp.com%2F&#038;format=xml" />
+		<link rel="alternate" type="application/json+oembed" href="http://merpati-workshop.hostingerapp.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmerpati-workshop.hostingerapp.com%2F" />
+		<link rel="alternate" type="text/xml+oembed" href="http://merpati-workshop.hostingerapp.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmerpati-workshop.hostingerapp.com%2F&#038;format=xml" />
 		<style type="text/css"></style>
 	</head>
 
@@ -107,7 +107,7 @@
 					<div id="main" class="" role="main">
 						<div id="sec1" class="widget shapely_home_parallax">
 							<section class="cover fullscreen image-bg">
-								<div class="parallax-window fullscreen" data-parallax="scroll" data-image-src="/wp-content/uploads/2019/03/Hero-Parallax.jpg" data-ios-fix="true" data-over-scroll-fix="true" data-android-fix="true">
+								<div class="parallax-window fullscreen" data-parallax="scroll" data-image-src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Hero-Parallax.jpg" data-ios-fix="true" data-over-scroll-fix="true" data-android-fix="true">
 									<div class="align-transform">
 										<div class="row">
 											<div class="top-parallax-section">
@@ -169,14 +169,14 @@
 									<div class="row align-children">
 										<div class="col-md-11 col-sm-12">
 											<div class="owl-carousel owl-theme">
-												<div class="item"><img src="/wp-content/uploads/2019/03/Carousel-1.jpg"/></div>
-												<div class="item"><img src="/wp-content/uploads/2019/03/Carousel-2.jpg"/></div>
-												<div class="item"><img src="/wp-content/uploads/2019/03/Carousel-3.jpg"/></div>
-												<div class="item"><img src="/wp-content/uploads/2019/03/Carousel-4.jpg"/></div>
-												<div class="item"><img src="/wp-content/uploads/2019/03/Carousel-5.jpg"/></div>
-												<div class="item"><img src="/wp-content/uploads/2019/03/Carousel-6.jpg"/></div>
-												<div class="item"><img src="/wp-content/uploads/2019/03/Carousel-7.jpg"/></div>
-												<div class="item"><img src="/wp-content/uploads/2019/03/Carousel-8.jpg"/></div>
+												<div class="item"><img src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Carousel-1.jpg"/></div>
+												<div class="item"><img src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Carousel-2.jpg"/></div>
+												<div class="item"><img src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Carousel-3.jpg"/></div>
+												<div class="item"><img src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Carousel-4.jpg"/></div>
+												<div class="item"><img src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Carousel-5.jpg"/></div>
+												<div class="item"><img src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Carousel-6.jpg"/></div>
+												<div class="item"><img src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Carousel-7.jpg"/></div>
+												<div class="item"><img src="http://merpati-workshop.hostingerapp.com/wp-content/uploads/2019/03/Carousel-8.jpg"/></div>
 											</div>
 										</div>
 									</div>
@@ -188,7 +188,7 @@
 							<section class="">
 								<div class="container">
 									<div class="row align-children">
-										<div class="col-md-12 col-sm-12">
+										<div class="col-md-offset-3 col-md-6 col-sm-12">
 
 											<?php echo do_shortcode( '[contact-form-7 id="11" title="Contact form 1"]' ); ?>
 
@@ -243,22 +243,22 @@
 var wpcf7 = {"apiSettings":{"root":"http:\/\/merpati-workshop.hostingerapp.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
 /* ]]> */
 		</script>
-		<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
-		<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/bootstrap.js?ver=20160115'></script>
-		<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/skip-link-focus-fix.js?ver=20160115'></script>
-		<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/flexslider.min.js?ver=20160222'></script>
-		<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/parallax.min.js?ver=20160115'></script>
-		<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/owl-carousel/owl.carousel.min.js?ver=20160115'></script>
-		<script type='text/javascript' src='/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/bootstrap.js?ver=20160115'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/skip-link-focus-fix.js?ver=20160115'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/flexslider.min.js?ver=20160222'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/parallax.min.js?ver=20160115'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/owl-carousel/owl.carousel.min.js?ver=20160115'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
 		<script type='text/javascript'>
 			/* <![CDATA[ */
 var ShapelyAdminObject = {"sticky_header":"1"};
 /* ]]> */
 		</script>
-		<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/shapely-scripts.js?ver=20180423'></script>
-		<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
-		<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/jquery.easing.1.3.js?ver=5.1.1'></script>
-		<script type="text/javascript" src="http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=1.4.1"></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/shapely-scripts.js?ver=20180423'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+		<script type='text/javascript' src='http://merpati-workshop.hostingerapp.com/wp-content/themes/shapely/assets/js/jquery.easing.1.3.js?ver=5.1.1'></script>
+		<script type="text/javascript" src='http://merpati-workshop.hostingerapp.com/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=1.4.1'></script>
 		<script>
 			(function($) {
 				$(document).ready(function() {
