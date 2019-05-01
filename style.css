@@ -4592,3 +4592,7 @@ button.owl-next {
 .owl-theme .owl-nav [class*='owl-'] {
 	margin:0;
 }
+
+wpcf7-submit {
+	text-align:center;
+}

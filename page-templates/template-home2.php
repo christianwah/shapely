@@ -186,9 +186,9 @@
 						</div>
 						<div id="sec5" class="widget shapely_home_parallax">
 							<section class="">
-								<div class="container">
+								<div class="container-fluid">
 									<div class="row align-children">
-										<div class="col-md-offset-3 col-md-6 col-sm-12">
+										<div class="col-md-6 col-sm-12">
 
 											<?php echo do_shortcode( '[contact-form-7 id="11" title="Contact form 1"]' ); ?>
 
