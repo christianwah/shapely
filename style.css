@@ -4531,12 +4531,12 @@ section .widget-post-excerpt {
 
 /* Custom CSS */
 #sec2 {
-	background: url("/wp-content/uploads/2019/03/Home-BG-1.jpg") no-repeat center;
+	background: url("/qrcode/wp-content/uploads/Home-BG-1.jpg") no-repeat center;
 	background-size: cover;
 }
 
 #sec5 {
-	background: url("/wp-content/uploads/2019/04/CF-Background.jpg") no-repeat center;
+	background: url("/qrcode/wp-content/uploads/CF-Background.jpg") no-repeat center;
 	background-size: cover;
 	color:#fff;
 }
@@ -4591,4 +4591,8 @@ button.owl-next {
 
 .owl-theme .owl-nav [class*='owl-'] {
 	margin:0;
+}
+
+wpcf7-submit {
+	text-align:center;
 }

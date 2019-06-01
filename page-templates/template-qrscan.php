@@ -12,7 +12,21 @@ get_header();
 include get_template_directory() . '/inc/phpqrcode/qrlib.php';
 include get_template_directory() . '/inc/custom.php';
 
-?><img src="data:image/png;base64,<?php echo $imageString ?>" width="200px" /> <?
+?>
+
+<img src="data:image/png;base64,<?php echo $imageString ?>" width="200px" /> 
+
+
+
+
+
+
+
+
+
+
+
+<?
 
 while ( have_posts() ) {
 	the_post();
