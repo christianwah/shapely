@@ -64,7 +64,7 @@
 
 	<body class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-12 has-sidebar-right">
 
-		<button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+		<a href="#content"  id="topButton"><i class="fa fa-angle-up"></i></a>
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -74,7 +74,7 @@
 						<div class="container nav-bar">
 							<div class="flex-row">
 								<div class="module left site-title-container">
-									<a href="/" class="custom-logo-link"><span class="site-title">Yunus &amp; Delfina Wedding</span></a>						</div>
+									<a href="<?php echo get_site_url(); ?>" class="custom-logo-link"><span class="site-title">Yunus &amp; Delfina Wedding</span></a>						</div>
 								<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
 									<i class="fa fa-bars"></i>
 								</div>
@@ -188,7 +188,7 @@
 							<section class="">
 								<div class="container-fluid">
 									<div class="row align-children">
-										<div class="col-md-6 col-sm-12">
+										<div class="col-md-6 col-sm-12" id="wpcf7-container">
 
 											<?php echo do_shortcode( '[contact-form-7 id="11" title="Contact form 1"]' ); ?>
 
@@ -204,7 +204,7 @@
 
 				<div class="footer-callout">
 				</div>
-
+				
 				<footer id="colophon" class="site-footer footer bg-dark" role="contentinfo">
 					<div class="container footer-inner">
 						<div class="row">
@@ -213,13 +213,13 @@
 
 						<div class="row">
 							<div class="site-info col-sm-6">
-								<div class="copyright-text">
-								</div>
-								<div class="footer-credits">
-									Theme by <a href="https://colorlib.com/" target="_blank" title="Colorlib">Colorlib</a> Powered by <a href="http://wordpress.org/" target="_blank" title="WordPress.org">WordPress</a>
-								</div>
 							</div><!-- .site-info -->
 							<div class="col-sm-6 text-right">
+								<div class="copyright-text">
+									&copy; 2019 Christian Wahyunus Pangestu
+								</div>
+								<div class="footer-credits">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -260,92 +260,8 @@ var ShapelyAdminObject = {"sticky_header":"1"};
 		<script type='text/javascript' src='<?php echo get_site_url(); ?>/wp-content/themes/shapely/assets/js/jquery.easing.1.3.js?ver=5.1.1'></script>
 		<script type="text/javascript" src='<?php echo get_site_url(); ?>/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=1.4.1'></script>
 		<script>
-			(function($) {
-				$(document).ready(function() {
-					
-					
-					
-					$('.owl-carousel').owlCarousel({
-						margin: 10,
-						loop: true,
-						nav:true,
-						items:1,
-						dots: false,
-						navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
-					});
-							
-					var prevScrollpos = window.pageYOffset;
-					window.onscroll = function() {
-						var currentScrollPos = window.pageYOffset;
-						if (prevScrollpos > currentScrollPos) {
-							document.getElementById("site-navigation").style.top = "0";
-						} 
-						else {
-							document.getElementById("site-navigation").style.top = "-100px";
-						}
-						prevScrollpos = currentScrollPos;
-
-						scrollFunction()
-					};
-
-
-					function scrollFunction() {
-						if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-							document.getElementById("topButton").style.display = "block";
-						} else {
-							document.getElementById("topButton").style.display = "none";
-						}
-					}
-
-					function topFunction() {
-						(function($) {
-							$("html, body").animate({ scrollTop: "0px" },500, "easeInOutCirc");
-						})(jQuery);
-					}
-					
-					var wpcf7Elm = document.querySelector( '.wpcf7' );
-		 
-					wpcf7Elm.addEventListener( 'wpcf7submit', function( event ) {
-						jQuery(function($) {
-							alert( $("select[name=attendance]").val() );
-							if($("select[name=attendance]").val() == "Yes, I'll gladly come to your wedding"){
-								post('<?php echo get_site_url(); ?>/qr-code-generator', {email: $("input[name=your-email]").val()},'get');
-							}
-						})
-					}, false );
-					
-					/**
-					 * sends a request to the specified url from a form. this will change the window location.
-					 * @param {string} path the path to send the post request to
-					 * @param {object} params the paramiters to add to the url
-					 * @param {string} [method=post] the method to use on the form
-					 */
-
-					function post(path, params, method='post') {
-
-					  // The rest of this code assumes you are not using a library.
-					  // It can be made less wordy if you use one.
-					  const form = document.createElement('form');
-					  form.method = method;
-					  form.action = path;
-
-					  for (const key in params) {
-						if (params.hasOwnProperty(key)) {
-						  const hiddenField = document.createElement('input');
-						  hiddenField.type = 'hidden';
-						  hiddenField.name = key;
-						  hiddenField.value = params[key];
-
-						  form.appendChild(hiddenField);
-						}
-					  }
-
-					  document.body.appendChild(form);
-					  form.submit();
-					}
-
-				})
-			})(jQuery);
+			var urlRoot = "<?php echo get_site_url(); ?>";
 		</script>
+		<script type="text/javascript" src='<?php echo get_site_url(); ?>/wp-content/themes/shapely/custom.js?ver=5.1.1'></script>
 	</body>
 </html>
