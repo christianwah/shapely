@@ -3281,6 +3281,9 @@ footer.bg-dark a {
 }
 
 @media all and (max-width: 767px) {
+	.mb-xs-12 {
+		margin-bottom: 12px;
+	}
 	.mb-xs-24 {
 		margin-bottom: 24px;
 	}
@@ -4625,4 +4628,10 @@ footer {
 
 .mt80 {
 	margin-top: 80px;
+}
+
+
+.skyscanner-widget-custom {
+	border: 2px solid black;
+	
 }

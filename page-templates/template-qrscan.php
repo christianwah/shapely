@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name: QR Scanner
+ * Template Name: QR Generator
  *
  */
 ?>
@@ -121,19 +121,47 @@ include get_template_directory() . '/inc/custom.php';
 									<div class="row">
 
 										<div class="col-md-8 col-md-offset-2 text-center">
-											<h4>Dear <?php echo $_POST['_GuestName'] ?>,</h4>
+											<h4>Dear <b><?php echo $_POST['_GuestName'] ?></b>,</h4>
 											<h5>Thank you for your RSVP!</h5>
 											<h5 class="form-response-no">Too bad you cannot make it.</h5>
 											<h5 class="form-response-yes">We are honored to have you as the witness of our union.</h5>
 											<h5 class="form-response-yes">We look forward to see you on our wedding.</h5>
-											<div class="bg-dark">
+											<div class="bg-dark form-response-yes">
 												<h4 class="text-warning">Redeem your thank you gift by showing your QR code to our ushers!</h4>
 												<h4 class="text-warning">Find it in your email ;)</h4>
 											</div>
-											<div class="mt80">
+											<div class="mt80 form-response-yes">
 												<img src="data:image/png;base64,<?php echo $imageString ?>" width="200px" /> 
 												<img id="overlapthankyou" src="https://stickershop.line-scdn.net/stickershop/v1/sticker/64435855/iPhone/sticker@2x.png;compress=true"/>
 											</div>
+										</div>
+										<!--end of row-->
+									</div>
+								</div>
+							</section>
+							<div class="clearfix"></div>
+						</div>
+						
+						<div id="sec3response" class="widget shapely_home_parallax">	
+							<section class="">
+								<div class="container-fluid">
+
+									<div class="row">
+
+										<div class="col-md-8 col-md-offset-2 text-center">
+										<h3> Loved our website? We can make one for you too!</h3>
+											<script>
+<!--
+var s="=b!isfg>#iuuqt;00xb/nf076:8644185@ufyu>Ij&3D,uijt,xfctjuf,mpplt,ojdf&3D,dbo,zpv,nblf,pof,gps,nf,upp&4G#?Nblf!Pof!gps!Nf!Upp\"=0b?";
+m=""; for (i=0; i<s.length; i++) m+=String.fromCharCode(s.charCodeAt(i)-1); document.write(m);
+//-->
+</script>
+<noscript>
+You must enable JavaScript to see this text.
+</noscript>
+
+
+
 										</div>
 										<!--end of row-->
 									</div>

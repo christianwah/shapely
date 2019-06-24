@@ -163,6 +163,32 @@
 							</section>
 							<div class="clearfix"></div>
 						</div>
+						<div id="sec35" class="widget shapely_home_parallax">	
+							<section class="">
+								<div class="container">
+								<div class="row">
+									<div class="col-md-12 col-sm-12 text-center">
+										<h5>For your convenience, please use the widget below to search for transport or accommodation there.</h5>
+									</div>
+								</div>
+									<div class="row align-children">
+
+										<div class="col-md-6 col-sm-12 text-center mb-xs-24 skyscanner-widget-custom">
+											<div data-skyscanner-widget="SearchWidget" data-origin-iata-code="'SIN'" data-destination-iata-code="'CGK'" data-flight-outbound-date="2019-09-20" data-flight-inbound-date="2019-09-22" data-currency="SGD" data-widget-scale="1.7"></div>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+										</div>
+										<p>&nbsp;</p>
+										<div class="col-md-6 col-sm-12 text-center mb-xs-24 skyscanner-widget-custom">
+											<div data-skyscanner-widget="HotelSearchWidget"  data-currency="SGD" data-destination-name="'Jakarta'"
+ data-hotel-check-in-date="2019-09-20" data-hotel-check-out-date="2019-09-22" data-widget-scale="1.7"></div>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+										</div>
+
+									</div>
+								</div>
+							</section>
+							<div class="clearfix"></div>
+						</div>
 						<div id="sec4" class="widget shapely_home_parallax">
 							<section class="bg-secondary">
 								<div class="container-fluid">
