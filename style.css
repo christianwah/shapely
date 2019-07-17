@@ -4534,18 +4534,18 @@ section .widget-post-excerpt {
 
 /* Custom CSS */
 #sec2 {
-	background: url("/qrcode/wp-content/uploads/Home-BG-1.jpg") no-repeat center;
+	background: url("/wp-content/uploads/Home-BG-1.jpg") no-repeat center;
 	background-size: cover;
 }
 
 #sec5 {
-	background: url("/qrcode/wp-content/uploads/CF-Background.jpg") no-repeat top;
+	background: url("/wp-content/uploads/CF-Background.jpg") no-repeat top;
 	background-size: cover;
 	color:#fff;
 }
 
 #sec2response {
-	background: url("/qrcode/wp-content/uploads/CF-Background.jpg") no-repeat top;
+	background: url("/wp-content/uploads/CF-Background.jpg") no-repeat top;
 	background-size: cover;
 	color:#fff;
 }
