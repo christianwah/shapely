@@ -101,9 +101,11 @@
 		if (document.getElementById('loader') !== null)
 		{
 			document.getElementById("loader").style.display = "none";
+		}
+		if (document.getElementById('page') !== null)
+		{
 			document.getElementById("page").style.display = "block";
 		}
-		
 	})
 	
 $.holdReady(true);
