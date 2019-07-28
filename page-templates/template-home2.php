@@ -64,7 +64,11 @@
 
 	<body id="body" class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-12 has-sidebar-right">
 		<div id="loader"><div class="lds-heart"><div></div></div><p>Loading...</p></div>
-
+		<div class="animation">
+			<img class="groom slide-bottom" src="<?php echo get_site_url(); ?>/wp-content/uploads/groom.png"/>
+			<img class="bride slide-top" src="<?php echo get_site_url(); ?>/wp-content/uploads/bride.png"/>
+			<img class="together fade-in" src="<?php echo get_site_url(); ?>/wp-content/uploads/together.png"/>
+		</div>
 		<a href="#content"  id="topButton"><i class="fa fa-angle-up"></i></a>
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -230,6 +234,7 @@
 				</section><!-- section -->
 
 				<div class="footer-callout">
+					<a href="https://www.freepik.com/free-photos-vectors/wedding">Wedding vector created by freepik - www.freepik.com</a>
 				</div>
 				
 				<footer id="colophon" class="site-footer footer bg-dark" role="contentinfo">

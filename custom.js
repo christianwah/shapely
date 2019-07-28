@@ -107,7 +107,7 @@
 $.holdReady(true);
     setTimeout(function(){
 $.holdReady(false);
-    }, 10000);
+    }, 10);
 	
 	
 	
