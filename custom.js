@@ -99,5 +99,21 @@
 		
 		
 		
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("page").style.display = "block";
+		
 	})
+	
+$.holdReady(true);
+    setTimeout(function(){
+$.holdReady(false);
+    }, 10000);
+	
+	
+	
+})(jQuery);
+
+
+(function($) {
+	
 })(jQuery);

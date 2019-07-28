@@ -62,7 +62,8 @@
 		<style type="text/css"></style>
 	</head>
 
-	<body class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-12 has-sidebar-right">
+	<body id="body" class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-12 has-sidebar-right">
+		<div id="loader"></div>
 
 		<a href="#content"  id="topButton"><i class="fa fa-angle-up"></i></a>
 		<div id="page" class="site">
