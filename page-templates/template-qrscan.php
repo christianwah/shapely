@@ -226,7 +226,7 @@ var ShapelyAdminObject = {"sticky_header":"1"};
 		<script type='text/javascript' src='http://delightfulyunion.online/wp-content/themes/shapely/assets/js/jquery.easing.1.3.js?ver=5.1.1'></script>
 		<script type="text/javascript" src='http://delightfulyunion.online/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=1.4.1'></script>
 		<script>
-			var urlRoot = "http://delightfulyunion.online";
+			var urlRoot = "<?php echo get_site_url(); ?>";
 		</script>
 		<script type="text/javascript" src='http://delightfulyunion.online/wp-content/themes/shapely/custom.js?ver=5.1.1'></script>
 	</body>
