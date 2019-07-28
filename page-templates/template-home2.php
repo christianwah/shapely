@@ -63,7 +63,7 @@
 	</head>
 
 	<body id="body" class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-12 has-sidebar-right">
-		<div id="loader"></div>
+		<div id="loader"><div class="lds-heart"><div></div></div><p>Loading...</p></div>
 
 		<a href="#content"  id="topButton"><i class="fa fa-angle-up"></i></a>
 		<div id="page" class="site">
