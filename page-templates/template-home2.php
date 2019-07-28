@@ -234,7 +234,6 @@
 				</section><!-- section -->
 
 				<div class="footer-callout">
-					<a href="https://www.freepik.com/free-photos-vectors/wedding">Wedding vector created by freepik - www.freepik.com</a>
 				</div>
 				
 				<footer id="colophon" class="site-footer footer bg-dark" role="contentinfo">
