@@ -1,8 +1,5 @@
 (function($) {
 	$(document).ready(function() {
-		
-		
-		
 		$('.owl-carousel').owlCarousel({
 			margin: 10,
 			loop: true,
@@ -11,30 +8,7 @@
 			dots: false,
 			navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
 		});
-				
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-			var currentScrollPos = window.pageYOffset;
-			if (prevScrollpos > currentScrollPos) {
-				document.getElementById("site-navigation").style.top = "0";
-			} 
-			else {
-				document.getElementById("site-navigation").style.top = "-100px";
-			}
-			prevScrollpos = currentScrollPos;
-
-			scrollFunction()
-		};
-
-
-		function scrollFunction() {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				document.getElementById("topButton").style.display = "block";
-			} else {
-				document.getElementById("topButton").style.display = "none";
-			}
-		}
-
+		
 		function topFunction() {
 			(function($) {
 				$("html, body").animate({ scrollTop: "0px" },500, "easeInOutCirc");
@@ -66,52 +40,15 @@
 			}, false );
 		}
 		
-		/**
-		 * sends a request to the specified url from a form. this will change the window location.
-		 * @param {string} path the path to send the post request to
-		 * @param {object} params the paramiters to add to the url
-		 * @param {string} [method=post] the method to use on the form
-		 */
 
-		function post(path, params, method='post') {
 
-		  // The rest of this code assumes you are not using a library.
-		  // It can be made less wordy if you use one.
-		  const form = document.createElement('form');
-		  form.method = method;
-		  form.action = path;
 
-		  for (const key in params) {
-			if (params.hasOwnProperty(key)) {
-			  const hiddenField = document.createElement('input');
-			  hiddenField.type = 'hidden';
-			  hiddenField.name = key;
-			  hiddenField.value = params[key];
-
-			  form.appendChild(hiddenField);
-			}
-		  }
-
-		  document.body.appendChild(form);
-		  form.submit();
-		}
-
-		
-		
-		if (document.getElementById('loader') !== null)
-		{
-			document.getElementById("loader").style.display = "none";
-		}
-		if (document.getElementById('page') !== null)
-		{
-			document.getElementById("page").style.display = "block";
-		}
 	})
-	
-$.holdReady(true);
-    setTimeout(function(){
-$.holdReady(false);
-    }, 10);
+		
+	$.holdReady(true);
+	setTimeout(function(){
+		$.holdReady(false);
+	}, 10);
 	
 	
 	
@@ -119,5 +56,136 @@ $.holdReady(false);
 
 
 (function($) {
+	function ipLookUp () {
+		$.ajax('http://ip-api.com/json')
+		.then(
+			function success(response) {
+				console.log('User\'s Location Data is ', response);
+				console.log('User\'s Country', response.country);
+				if (response.country != "Singapore") {
+					$(".en").hide();
+				}
+				else {
+					$(".id").hide();
+				}
+			},
+
+			function fail(data, status) {
+				console.log('Request failed.  Returned status of',
+							 status);
+			}
+		);
+	}
+	ipLookUp();
 	
+
+	function increaseFontSize(){
+		var prev;
+		$('*').each(function(){
+			var k =  parseInt($(this).css('font-size')); 
+			if (typeof k !== "undefined" && k != prev) {
+				prev = k;
+				var redSize = ((k*1.2)) ; //here, you can give the percentage( now it is reduced to 90%)
+				$(this).css('font-size',redSize);  
+			}
+			else
+			{
+				var redSize = 11 ; //here, you can give the percentage( now it is reduced to 90%)
+				$(this).css('font-size',redSize);  
+			}
+		});
+	}
+	function decreaseFontSize(){
+		var prev;
+		$('*').each(function(){
+			var k =  parseInt($(this).css('font-size')); 
+			if (typeof k !== "undefined" && k != prev) {
+				prev = k;
+				var redSize = ((k*0.83)) ; //here, you can give the percentage( now it is reduced to 90%)
+				$(this).css('font-size',redSize);  
+			}
+			else
+			{
+				var redSize = 11 ; //here, you can give the percentage( now it is reduced to 90%)
+				$(this).css('font-size',redSize);  
+			}
+		});
+	}
+	$(document).ready(function() {
+		$("#plus-font-size-btn").click(increaseFontSize);
+		$("#minus-font-size-btn").click(decreaseFontSize);
+		$(window).load(function() {
+			setTimeout(function(){ 
+				$(".skyscanner-search-widget").attr('style', 'margin-bottom: 86.1px;');
+				$(".skyscanner-search-widget").attr('style', 'margin-top: 86.1px;');
+			}, 3000);
+		});
+	})
 })(jQuery);
+
+/**
+ * sends a request to the specified url from a form. this will change the window location.
+ * @param {string} path the path to send the post request to
+ * @param {object} params the paramiters to add to the url
+ * @param {string} [method=post] the method to use on the form
+ */
+function post(path, params, method='post') {
+
+  // The rest of this code assumes you are not using a library.
+  // It can be made less wordy if you use one.
+  const form = document.createElement('form');
+  form.method = method;
+  form.action = path;
+
+  for (const key in params) {
+	if (params.hasOwnProperty(key)) {
+	  const hiddenField = document.createElement('input');
+	  hiddenField.type = 'hidden';
+	  hiddenField.name = key;
+	  hiddenField.value = params[key];
+
+	  form.appendChild(hiddenField);
+	}
+  }
+
+  document.body.appendChild(form);
+  form.submit();
+}
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	if (prevScrollpos > currentScrollPos) {
+		document.getElementById("site-navigation").style.top = "0";
+	} 
+	else {
+		document.getElementById("site-navigation").style.top = "-100px";
+	}
+	prevScrollpos = currentScrollPos;
+
+	scrollFunction()
+};
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("top-button").style.display = "block";
+	} else {
+		document.getElementById("top-button").style.display = "none";
+	}
+}	
+
+window.onload = function() {
+	if (document.getElementById('loader') !== null)
+	{
+		document.getElementById("loader").style.display = "none";
+	}
+	if (document.getElementById('page') !== null)
+	{
+		document.getElementById("page").style.display = "block";
+	}
+}
+
+
+
+
+
+

@@ -73,7 +73,9 @@ include get_template_directory() . '/inc/custom.php';
 
 	<body class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-12 has-sidebar-right">
 
-		<button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+		<a class="fixed-button" id="minus-font-size-btn">A-</button>
+		<a class="fixed-button" id="plus-font-size-btn" >A+</button>
+		<a href="#content" class="fixed-button" id="top-button"><i class="fa fa-angle-up"></i></a>
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 

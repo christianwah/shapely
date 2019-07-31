@@ -69,7 +69,9 @@
 			<img class="bride slide-top" src="<?php echo get_site_url(); ?>/wp-content/uploads/bride.png"/>
 			<img class="together fade-in" src="<?php echo get_site_url(); ?>/wp-content/uploads/together.png"/>
 		</div>
-		<a href="#content"  id="topButton"><i class="fa fa-angle-up"></i></a>
+		<a class="fixed-button" id="minus-font-size-btn">A-</button>
+		<a class="fixed-button" id="plus-font-size-btn" >A+</button>
+		<a href="#content" class="fixed-button" id="top-button"><i class="fa fa-angle-up"></i></a>
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -87,7 +89,7 @@
 									<div class="module left">
 									</div>
 									<!--end of menu module-->
-									<div class="module widget-handle search-widget-handle hidden-xs hidden-sm">
+									<div class="module widget-handle search-widget-handle hidden-xs hidden-sm d-none">
 										<div class="search">
 											<i class="fa fa-search"></i>
 											<span class="title">Site Search</span>
@@ -139,10 +141,13 @@
 									<div class="row">
 
 										<div class="col-md-12 text-center">
-											<h4>Ephesians 5:25</h4>
-											<h5>Husbands, love your wives, just as Christ loved the church and gave himself up for her</h5>
+											<h4 class="en">Ephesians 5:25</h4>
+											<h4 class="id">Efesus 5:25</h4>
+											<h5 class="en">Husbands, love your wives, just as Christ loved the church and gave himself up for her</h5>
+											<h5 class="id">Hai suami, kasihilah isterimu sebagaimana Kristus telah mengasihi jemaat dan telah menyerahkan diri-Nya baginya.</h5>
 											<section></section>
-											<h4>Save the Date!</h4>
+											<h4 class="en">Save the Date!</h4>
+											<h4 class="id">Save the Date!</h4>
 										</div>
 										<!--end of row-->
 									</div>
@@ -156,11 +161,11 @@
 									<div class="row align-children">
 
 										<div class="col-md-6 col-sm-12 text-center mb-xs-24">
-											<div><h3>Holy Matrimony</h3><p>21 September 2019 11:00</p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.3555419620395!2d106.77672200000002!3d-6.169428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6511656830d%3A0x5ad3782c1d213980!2sGereja+Kristus+Yesus+Jemaat+Greenville!5e0!3m2!1sen!2sus!4v1552917378479" width="70%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe><p>Gereja Kristus Yesus Jemaat Greenville</p><p>Komplek Greenville Blok AZ no.1, Duri Kepa, DKI Jakarta 11510, Indonesia</p></div>
+											<div><h3 class="en">Holy Matrimony</h3><h3 class="id">Pemberkatan Nikah</h3><p>21 September 2019 11:00</p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.3555419620395!2d106.77672200000002!3d-6.169428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6511656830d%3A0x5ad3782c1d213980!2sGereja+Kristus+Yesus+Jemaat+Greenville!5e0!3m2!1sen!2sus!4v1552917378479" width="70%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe><p>Gereja Kristus Yesus Jemaat Greenville</p><p>Komplek Greenville Blok AZ no.1, Duri Kepa, DKI Jakarta 11510, Indonesia</p></div>
 										</div>
 										<p>&nbsp;</p>
 										<div class="col-md-6 col-sm-12 text-center mb-xs-24">
-											<div><h3>Wedding Reception</h3><p>21 September 2019 19:00</p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7933.4863253745325!2d106.819075!3d-6.16514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5df51bf1555%3A0xf5536ba826eb077e!2sLion+Air+Tower!5e0!3m2!1sen!2sus!4v1552917851557"   width="70%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe><p>Lion Air Tower</p><p>Jl. Gajah Mada No.7, RT.1/RW.2, Petojo Utara, Gambir, DKI Jakarta 10130, Indonesia</p></div>
+											<div><h3 class="en">Wedding Reception</h3><h3 class="id">Resepsi Pernikahan</h3><p>21 September 2019 19:00</p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7933.4863253745325!2d106.819075!3d-6.16514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5df51bf1555%3A0xf5536ba826eb077e!2sLion+Air+Tower!5e0!3m2!1sen!2sus!4v1552917851557"   width="70%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe><p>Lion Air Tower</p><p>Jl. Gajah Mada No.7, RT.1/RW.2, Petojo Utara, Gambir, DKI Jakarta 10130, Indonesia</p></div>
 										</div>
 
 									</div>
@@ -172,22 +177,22 @@
 							<section class="">
 								<div class="container">
 								<div class="row">
-									<div class="col-md-12 col-sm-12 text-center">
-										<h5>For your convenience, please use the widget below to search for transport or accommodation there.</h5>
+									<div class="col-md-12 col-sm-12 text-center image-bg">
+										<h5 class="en">For your convenience, please use the widget below to search for flight or accommodation there.</h5>
+										<h5 class="id">Untuk kenyamanan anda, silahkan pakai widget berikut untuk mencari penerbangan atau akomodasi.</h5>
 									</div>
 								</div>
 									<div class="row align-children">
 
 										<div class="col-md-6 col-sm-12 text-center mb-xs-24 skyscanner-widget-custom">
 											<div data-skyscanner-widget="SearchWidget" data-origin-iata-code="'SIN'" data-destination-iata-code="'CGK'" data-flight-outbound-date="2019-09-20" data-flight-inbound-date="2019-09-22" data-currency="SGD" data-widget-scale="1.7"></div>
-<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 										</div>
 										<p>&nbsp;</p>
 										<div class="col-md-6 col-sm-12 text-center mb-xs-24 skyscanner-widget-custom">
 											<div data-skyscanner-widget="HotelSearchWidget"  data-currency="SGD" data-destination-name="'Jakarta'"
  data-hotel-check-in-date="2019-09-20" data-hotel-check-out-date="2019-09-22" data-widget-scale="1.7"></div>
-<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 										</div>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 
 									</div>
 								</div>
@@ -219,8 +224,8 @@
 							<section class="">
 								<div class="container-fluid">
 									<div class="row align-children">
-										<div class="col-md-6 col-sm-12" id="wpcf7-container">
-
+										<div class="col-md-6 col-sm-12 image-bg" id="wpcf7-container">
+											<h1 class="">RSVP Form</h1>
 											<?php echo do_shortcode( '[contact-form-7 id="11" title="Contact form 1"]' ); ?>
 
 										</div>

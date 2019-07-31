@@ -4484,6 +4484,10 @@ aside .shapely-social .shapely-social-icon {
 }
 
 /* Contact Form 7 */
+#wpcf7-container {
+	padding: 15px 25px;
+}
+
 .wpcf7-form div.wpcf7-validation-errors {
 	background: #f7e700;
 	color: #000;
@@ -4536,10 +4540,18 @@ section .widget-post-excerpt {
 #sec2 {
 	background: url("https://delightfulyunion.online/wp-content/uploads/Home-BG-1.jpg") no-repeat center;
 	background-size: cover;
+	opacity:0.9;
+}
+
+#sec35 {
+	background-color: rgba(137,207,240,0.9);
+	background-size: cover;
+	color:#fff;
+	opacity:0.8
 }
 
 #sec5 {
-	background: url("https://delightfulyunion.online/wp-content/uploads/CF-Background.jpg") no-repeat top;
+	background-color: rgba(137,207,240,0.9);
 	background-size: cover;
 	color:#fff;
 }
@@ -4554,26 +4566,40 @@ section .widget-post-excerpt {
 	color:#fff;
 }
 
-
-#topButton {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 4px;
+.fixed-button {
+	position: fixed;
+	bottom: 20px;
+	z-index: 99;
+	color: white;
+	text-align:center;
+	background-color: red;
+	width:40px;
 }
 
-#topButton:hover {
-  background-color: #555;
+.fixed-button:hover {
+	background-color: #555;
 }
+
+#minus-font-size-btn {
+	padding: 5px 15px;
+	right: 110px;
+}
+#plus-font-size-btn {
+	padding: 5px 15px;
+	right: 65px;
+}
+#top-button {
+	display: none;
+	right: 20px;
+	font-size: 18px;
+	color: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 5px 0px;
+	border-radius: 4px;
+}
+
 
 button.owl-prev {
 	width: 50px;
@@ -4630,13 +4656,12 @@ footer {
 	margin-top: 80px;
 }
 
-
 .skyscanner-widget-custom {
-	border: 2px solid black;
+	background:#fff;
+	padding:10px;
+	min-height:450px;
+	margin-bottom:150px;
 }
-
-
-
 
 /* Loading Screen */
 #loader {
@@ -4644,9 +4669,9 @@ footer {
   left: 50%;
   top: 50%;
   z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
+  width: 70px;
+  height: 70px;
+  margin: -35px 0 0 -35px;
 }
 
 .lds-heart {
@@ -4709,25 +4734,24 @@ footer {
 }
 
 /* Bride Groom Animation*/
-.groom {
+.groom, .bride, .together {
 	position:fixed;
-	width:11.3vh;
 	left:50vw;
+	opacity:0.5;
+}
+.groom {
+	width:11.3vh;
 	height:20vh;
 	top:-10vh;
 	margin-left:-11.3vh;
 }
 .bride {
-	position:fixed;
 	width:11.3vh;
-	left:50vw;
 	height:20vh;
 	top:90vh;
 }
 .together {
-	position:fixed;
     opacity: 0;
-	left:50vw;
 	height:25vh;
 	top:35vh;
 	margin-left:-11.3vh;
@@ -4754,7 +4778,7 @@ footer {
   }
   99% {
     -webkit-transform: translateY(50vh);
-    opacity: 1;
+    opacity: 0.7;
   }
   100% {
     -webkit-transform: translateY(50vh);
@@ -4768,7 +4792,7 @@ footer {
   }
   99% {
 	transform: translateY(50vh);
-    opacity: 1;
+    opacity: 0.7;
   }
   100% {
 	transform: translateY(50vh);
@@ -4783,7 +4807,7 @@ footer {
   }
   99% {
     -webkit-transform: translateY(-50vh);
-    opacity: 1;
+    opacity: 0.7;
   }
   100% {
     -webkit-transform: translateY(-50vh);
@@ -4797,7 +4821,7 @@ footer {
   }
   99% {
 	transform: translateY(-50vh);
-    opacity: 1;
+    opacity: 0.7;
   }
   100% {
 	transform: translateY(-50vh);
@@ -4813,7 +4837,7 @@ footer {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0.7;
   }
 }
 @keyframes fade-in {
@@ -4824,6 +4848,10 @@ footer {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0.7;
   }
+}
+
+.d-none {
+	display:none;
 }
