@@ -57,16 +57,32 @@
 
 (function($) {
 	function ipLookUp () {
-		$.ajax('http://ip-api.com/json')
+		$.ajax('https://ipinfo.io/json?token=cac482689b6e66')
 		.then(
 			function success(response) {
 				console.log('User\'s Location Data is ', response);
 				console.log('User\'s Country', response.country);
-				if (response.country != "Singapore") {
+				if (response.country == "ID") {
 					$(".en").hide();
+					$(".id").show();
 				}
-				else {
-					$(".id").hide();
+			},
+
+			function fail(data, status) {
+				console.log('Request failed.  Returned status of',
+							 status);
+				ipLookUp2();
+			}
+		);
+	}
+	function ipLookUp2 () {
+		$.ajax('https://ipapi.co/country/')
+		.then(
+			function success(response) {
+				console.log('User\'s Country', response);
+				if (response == "ID") {
+					$(".en").hide();
+					$(".id").show();
 				}
 			},
 
@@ -76,7 +92,6 @@
 			}
 		);
 	}
-	ipLookUp();
 	
 
 	function increaseFontSize(){
@@ -112,6 +127,9 @@
 		});
 	}
 	$(document).ready(function() {
+		
+		$(".id").hide();
+		ipLookUp();
 		$("#plus-font-size-btn").click(increaseFontSize);
 		$("#minus-font-size-btn").click(decreaseFontSize);
 		$(window).load(function() {
