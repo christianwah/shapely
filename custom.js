@@ -26,7 +26,9 @@
 						var name = $("input[name=your-name]").val();
 						var pnumber = $("input[name=number-of-attendee]").val();
 						var address = $("input[name=address]").val();
-						post(urlRoot+'/qr-code-generator/', {_email: $("input[name=your-email]").val(), _GuestName:$("input[name=your-name]").val(), _attendance:$("select[name=attendance]").val(), _attendanceNo:$("input[name=number-of-attendee]").val(), _phone:$("input[name=phone]").val(), _inviteReq:$("input[name=invitation-card]").val(), _address:$("input[name=address]").val(), _feedback:$("select[name=feedback]").val()},'post');
+						var checkedBox ="";
+						$("input[type=checkbox]").each(function(){checkedBox = checkedBox + ", " +$(this).val()});
+						post(urlRoot+'/qr-code-generator/', {_email: $("input[name=your-email]").val(), _GuestName:$("input[name=your-name]").val(), _attendance:$("select[name=attendance]").val(), _attending:checkedBox, _attendanceNo:$("input[name=number-of-attendee]").val(), _phone:$("input[name=phone]").val(), _inviteReq:$("input[name=invitation-card]").val(), _address:$("textarea[name=address]").val(), _feedback:$("textarea[name=feedback]").val()},'post');
 					//}
 				})
 			}, false );
@@ -35,7 +37,9 @@
 				jQuery(function($) { 	
 					//if($("select[name=attendance]").val() == "Yes, I'll gladly come to your wedding"){
 						var attendance = $("select[name=attendance]").val();
-						post(urlRoot+'/qr-code-generator/', {_email: $("input[name=your-email]").val(), _GuestName:$("input[name=your-name]").val(), _attendance:$("select[name=attendance]").val(), _attendanceNo:$("input[name=number-of-attendee]").val(), _phone:$("input[name=phone]").val(), _inviteReq:$("input[name=invitation-card]").val(), _address:$("input[name=address]").val(), _feedback:$("select[name=feedback]").val()},'post');
+						var checkedBox ="";
+						$("input[type=checkbox]").each(function(){checkedBox = checkedBox + " " +$(this).val()});
+						post(urlRoot+'/qr-code-generator/', {_email: $("input[name=your-email]").val(), _GuestName:$("input[name=your-name]").val(), _attendance:$("select[name=attendance]").val(), _attending:checkedBox, _attendanceNo:$("input[name=number-of-attendee]").val(), _phone:$("input[name=phone]").val(), _inviteReq:$("input[name=invitation-card]").val(), _address:$("textarea[name=address]").val(), _feedback:$("textarea[name=feedback]").val()},'post');
 					//}
 				})
 			}, false );
