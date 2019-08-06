@@ -211,7 +211,6 @@
 												<div class="item"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/Carousel-4.jpg"/></div>
 												<div class="item"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/Carousel-5.jpg"/></div>
 												<div class="item"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/Carousel-6.jpg"/></div>
-												<div class="item"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/Carousel-7.jpg"/></div>
 												<div class="item"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/Carousel-8.jpg"/></div>
 											</div>
 										</div>

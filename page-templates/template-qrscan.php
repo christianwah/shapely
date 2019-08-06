@@ -128,9 +128,11 @@ include get_template_directory() . '/inc/custom.php';
 											<h5 class="form-response-no">Too bad you cannot make it.</h5>
 											<h5 class="form-response-yes">We are honored to have you as the witness of our union.</h5>
 											<h5 class="form-response-yes">We look forward to see you on our wedding.</h5>
+											<h5 class="form-response-yes">Please use <b>#DelightfulYunion</b> when sharing photos on Instagram.</h5>
+											
 											<div class="bg-dark form-response-yes">
 												<h4 class="text-warning">Redeem your thank you gift by showing your QR code to our ushers!</h4>
-												<h4 class="text-warning">Find it in your email ;)</h4>
+												<h4 class="text-warning">Find it in your email soon ;)</h4>
 											</div>
 											<div class="mt80 form-response-yes">
 												<img src="data:image/png;base64,<?php echo $imageString ?>" width="200px" /> 

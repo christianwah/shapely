@@ -22,9 +22,11 @@
 			wpcf7Elm.addEventListener( 'wpcf7mailfailed', function( event ) {
 				jQuery(function($) {
 					//if($("select[name=attendance]").val() == "Yes, I'll gladly come to your wedding"){
-						post(urlRoot+'/qr-code-generator/', {_email: $("input[name=your-email]").val(), 
-															_GuestName:$("input[name=your-name]").val(),
-															_attendance:$("select[name=attendance]").val()},'post');
+						var attendance = $("select[name=attendance]").val();
+						var name = $("input[name=your-name]").val();
+						var pnumber = $("input[name=number-of-attendee]").val();
+						var address = $("input[name=address]").val();
+						post(urlRoot+'/qr-code-generator/', {_email: $("input[name=your-email]").val(), _GuestName:$("input[name=your-name]").val(), _attendance:$("select[name=attendance]").val(), _attendanceNo:$("input[name=number-of-attendee]").val(), _phone:$("input[name=phone]").val(), _inviteReq:$("input[name=invitation-card]").val(), _address:$("input[name=address]").val(), _feedback:$("select[name=feedback]").val()},'post');
 					//}
 				})
 			}, false );
@@ -32,9 +34,8 @@
 			wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
 				jQuery(function($) { 	
 					//if($("select[name=attendance]").val() == "Yes, I'll gladly come to your wedding"){
-						post(urlRoot+'/qr-code-generator/', {_email: $("input[name=your-email]").val(), 
-															_GuestName:$("input[name=your-name]").val(),
-															_attendance:$("select[name=attendance]").val()},'post');
+						var attendance = $("select[name=attendance]").val();
+						post(urlRoot+'/qr-code-generator/', {_email: $("input[name=your-email]").val(), _GuestName:$("input[name=your-name]").val(), _attendance:$("select[name=attendance]").val(), _attendanceNo:$("input[name=number-of-attendee]").val(), _phone:$("input[name=phone]").val(), _inviteReq:$("input[name=invitation-card]").val(), _address:$("input[name=address]").val(), _feedback:$("select[name=feedback]").val()},'post');
 					//}
 				})
 			}, false );
