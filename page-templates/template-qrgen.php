@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name: QR Scanner
+ * Template Name: QR Generator
  *
  */
 ?>
@@ -9,7 +9,7 @@
 
 
 include get_template_directory() . '/inc/phpqrcode/qrlib.php';
-include get_template_directory() . '/inc/receive.php';
+include get_template_directory() . '/inc/custom.php';
 
 ?>
 
@@ -71,10 +71,11 @@ include get_template_directory() . '/inc/receive.php';
 		<style type="text/css"></style>
 	</head>
 
-	<body class="home">
+	<body class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-12 has-sidebar-right">
 
 		<a class="fixed-button" id="minus-font-size-btn">A-</button>
 		<a class="fixed-button" id="plus-font-size-btn" >A+</button>
+		<a href="#content" class="fixed-button" id="top-button"><i class="fa fa-angle-up"></i></a>
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -115,34 +116,56 @@ include get_template_directory() . '/inc/receive.php';
 
 				<section class="content-area ">
 					<div id="main" class="" role="main">
-						<div id="sec2scan" class="bg-success">	
+						<div id="sec2response" class="widget shapely_home_parallax">	
 							<section class="">
 								<div class="container-fluid">
 
 									<div class="row">
 
 										<div class="col-md-8 col-md-offset-2 text-center">
-<?php
-$email = $_GET['_email'];
+											<h4>Dear <b><?php echo $_POST['_GuestName'] ?></b>,</h4>
+											<h5>Thank you for your RSVP!</h5>
+											<h5 class="form-response-no">Too bad you cannot make it.</h5>
+											<h5 class="form-response-yes">We are honored to have you as the witness of our union.</h5>
+											<h5 class="form-response-yes">We look forward to see you on our wedding.</h5>
+											<h5 class="form-response-yes">Please use <b>#DelightfulYunion</b> when sharing photos on Instagram.</h5>
+											
+											<div class="bg-dark form-response-yes">
+												<h4 class="text-warning">Redeem your thank you gift by showing your QR code to our ushers!</h4>
+												<h4 class="text-warning">Find it in your email soon ;)</h4>
+											</div>
+											<div class="mt80 form-response-yes">
+												<img src="data:image/png;base64,<?php echo $imageString ?>" width="200px" /> 
+												<img id="overlapthankyou" src="https://stickershop.line-scdn.net/stickershop/v1/sticker/64435855/iPhone/sticker@2x.png;compress=true"/>
+											</div>
+										</div>
+										<!--end of row-->
+									</div>
+								</div>
+							</section>
+							<div class="clearfix"></div>
+						</div>
+						
+						<div id="sec3response" class="widget shapely_home_parallax">	
+							<section class="">
+								<div class="container-fluid">
 
-$row = 1;
-if (($handle = fopen("D:\\Downloads\\dumcfdb7-2019-09-15 1.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-        //$num = count($data);
-        //echo "<p> $num fields in line $row: <br /></p>\n";
-        //$row++;
-        //for ($c=0; $c < $num; $c++) {
-        //    echo $data[$c] . "<br />\n";
-        //}
-		if ($data[4] == $email)
-		{
-			echo "<h3> Name is $data[3]</h3>\n";
-			echo "<h3> Number <b>$data[12]</b></h3>\n";
-		}
-    }
-    fclose($handle);
-}
-?>
+									<div class="row">
+
+										<div class="col-md-8 col-md-offset-2 text-center">
+										<h3> Loved our website? We can make one for you too!</h3>
+											<script>
+<!--
+var s="=b!isfg>#iuuqt;00xb/nf076:8644185@ufyu>Ij&3D,uijt,xfctjuf,mpplt,ojdf&3D,dbo,zpv,nblf,pof,gps,nf,upp&4G#?Nblf!Pof!gps!Nf!Upp\"=0b?";
+m=""; for (i=0; i<s.length; i++) m+=String.fromCharCode(s.charCodeAt(i)-1); document.write(m);
+//-->
+</script>
+<noscript>
+You must enable JavaScript to see this text.
+</noscript>
+
+
+
 										</div>
 										<!--end of row-->
 									</div>
