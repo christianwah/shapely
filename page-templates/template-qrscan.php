@@ -123,10 +123,11 @@ include get_template_directory() . '/inc/receive.php';
 
 										<div class="col-md-8 col-md-offset-2 text-center">
 <?php
+ini_set("allow_url_fopen", 1);
 $email = $_GET['_email'];
 
 $row = 1;
-if (($handle = fopen("D:\\Downloads\\dumcfdb7-2019-09-15 1.csv", "r")) !== FALSE) {
+if (($handle = fopen("https://delightfulyunion.online/cfdb7-2019-09-17.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         //$num = count($data);
         //echo "<p> $num fields in line $row: <br /></p>\n";
@@ -134,10 +135,10 @@ if (($handle = fopen("D:\\Downloads\\dumcfdb7-2019-09-15 1.csv", "r")) !== FALSE
         //for ($c=0; $c < $num; $c++) {
         //    echo $data[$c] . "<br />\n";
         //}
-		if ($data[4] == $email)
+		if ($data[2] == $email)
 		{
-			echo "<h3> Name is $data[3]</h3>\n";
-			echo "<h3> Number <b>$data[12]</b></h3>\n";
+			echo "<h3> Name is $data[1]</h3>\n";
+			echo "<h3> Number is <b>$data[3]</b></h3>\n";
 		}
     }
     fclose($handle);
